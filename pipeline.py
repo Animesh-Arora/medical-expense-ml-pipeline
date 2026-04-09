@@ -17,8 +17,6 @@ from sklearn.metrics import (
     confusion_matrix, classification_report, roc_auc_score
 )
 from sklearn.feature_selection import VarianceThreshold, mutual_info_classif, mutual_info_regression
-from sklearn.neighbors import NearestNeighbors
-from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
