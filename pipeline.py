@@ -217,6 +217,7 @@ def main():
             st.subheader("📝 Data Types Distribution")
             dtype_counts = data.dtypes.value_counts().reset_index()
             dtype_counts.columns = ['Data Type', 'Count']
+            dtype_counts['Data Type'] = dtype_counts['Data Type'].astype(str)
             fig = px.pie(dtype_counts, values='Count', names='Data Type', title="Data Types Distribution")
             st.plotly_chart(fig, use_container_width=True)
 
